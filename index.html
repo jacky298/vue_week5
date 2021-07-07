@@ -94,7 +94,7 @@
                       <div class="input-group input-group-sm">
                         <div class="input-group mb-4">
                           <input min="1" type="number" :disabled="loadingStatus.loadingStatus === item.id" v-model.number="item.qty" @change="updateCart(item)" class="form-control">
-                          <span class="input-group-text" id="basic-addon2"></span>
+                          <span class="input-group-text" id="basic-addon2">{{ item.product.unit }}</span>
                         </div>
                       </div>
                     </td>
